@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace ProductsCategories
 {
-    class Program
+    public class Category
     {
-        static void Main(string[] args)
+        public enum Name
         {
-            
+            Chocolate,
+            Jelly,
+            Wrapped_Candies,
+            Licorice,
+            Lollypop
         }
     }
 }

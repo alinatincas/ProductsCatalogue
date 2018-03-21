@@ -1,0 +1,18 @@
+﻿@using CatalogueLibrary;
+@{
+    Layout = "layouts/_Master.cshtml";
+    Page.Title = "Categories";
+
+    var filePath = Server.MapPath("data/products.json");
+    var products = DbProvider.GetProducts(filePath);
+    var categories = products.Select(p => p.Category).Distinct();
+}
+
+<h1>Categories</h1>
+
+@foreach (var category in categories)
+{
+
+    <a href="products?category=@category">@category</a><br />
+
+}

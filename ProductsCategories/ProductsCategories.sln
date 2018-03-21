@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SweetsLibrary", "ProductsCategories\SweetsLibrary.csproj", "{4577FAD6-45A8-41A8-A04F-C9152915FE0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogueLibrary", "CatalogueLibrary\CatalogueLibrary.csproj", "{54FF5F69-731C-412D-B8F0-4147C1530035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SweetsCatalogueWeb", "Test\SweetsCatalogueWeb.csproj", "{8D076D49-BCF2-478F-A54E-88F660B0F758}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4577FAD6-45A8-41A8-A04F-C9152915FE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4577FAD6-45A8-41A8-A04F-C9152915FE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4577FAD6-45A8-41A8-A04F-C9152915FE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4577FAD6-45A8-41A8-A04F-C9152915FE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54FF5F69-731C-412D-B8F0-4147C1530035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54FF5F69-731C-412D-B8F0-4147C1530035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54FF5F69-731C-412D-B8F0-4147C1530035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54FF5F69-731C-412D-B8F0-4147C1530035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D076D49-BCF2-478F-A54E-88F660B0F758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D076D49-BCF2-478F-A54E-88F660B0F758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D076D49-BCF2-478F-A54E-88F660B0F758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D076D49-BCF2-478F-A54E-88F660B0F758}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

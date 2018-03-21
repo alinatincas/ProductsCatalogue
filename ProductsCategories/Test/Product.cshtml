@@ -1,0 +1,19 @@
+﻿@using CatalogueLibrary;
+@{
+    Layout = "layouts/_Master.cshtml";
+    Page.Title = "Product";
+
+    String selectedProduct = Request["product"];
+    var filePath = Server.MapPath("data/products.json");
+    var products = DbProvider.GetProducts(filePath);
+    var product = products.Where(p => p.Name == selectedProduct).Single();
+}
+
+<h1>Products!</h1>
+
+<ul>
+    <li>@product.Name</li>
+    <li>@product.Manufacturer</li>
+    <li>@product.Category</li>
+    <li>@product.Description</li>
+</ul>

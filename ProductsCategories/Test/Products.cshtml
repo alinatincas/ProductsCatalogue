@@ -1,0 +1,16 @@
+﻿@using CatalogueLibrary;
+@{
+    Layout = "layouts/_Master.cshtml";
+    Page.Title = "Products";
+
+    String selectedCategory = Request["category"];
+    var filePath = Server.MapPath("data/products.json");
+    var products = DbProvider.GetProducts(filePath).Where(p => p.Category == selectedCategory);
+}
+
+<h1>Products!</h1>
+
+@foreach (var product in products)
+{
+    <a href="product?product=@product.Name">@product.Name</a><br />
+}

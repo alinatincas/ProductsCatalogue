@@ -4,15 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductsCategories
+namespace CatalogueLibrary
 {
     public class Product
     {
-        public int Id
-        {
-            get;
-            set;
-        }
         public String Name
         {
             get;
@@ -28,7 +23,7 @@ namespace ProductsCategories
             get;
             set;
         }
-        public Enum Category
+        public String Category
         {
             get;
             set;
@@ -39,8 +34,8 @@ namespace ProductsCategories
             set;
         }
 
-       //constructor
-        public Product(String name, String manufacturer, String country, Enum category, String description)
+        //constructor
+        public Product(String name, String manufacturer, String country, String category, String description)
         {
             this.Name = name;
             this.Manufacturer = manufacturer;

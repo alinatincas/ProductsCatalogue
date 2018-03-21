@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@Page.Title</title>
+    @RenderSection("head", required: false)
+</head>
+<body>
+
+    @RenderPage("~/partials/Navigation.cshtml")
+    <main>
+        <h1>Sweets</h1>
+        @RenderBody()
+    </main>
+
+    <hr />
+
+    <footer>
+        Copyright @DateTime.Now.Year - Alina
+    </footer>
+</body>
+</html>

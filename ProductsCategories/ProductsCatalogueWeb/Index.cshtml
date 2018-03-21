@@ -1,0 +1,10 @@
+﻿@using CatalogueLibrary;
+@{
+    Layout = "layouts/_Master.cshtml";
+    Page.Title = "Home";
+
+    var filePath = Server.MapPath("");
+    DbProvider.saveProducts(filePath);
+}
+
+<h1>Sweets!</h1>

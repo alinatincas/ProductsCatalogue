@@ -108,10 +108,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="assets\" />
-    <Folder Include="images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CatalogueLibrary\CatalogueLibrary.csproj">
       <Project>{54ff5f69-731c-412d-b8f0-4147c1530035}</Project>
@@ -129,7 +126,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53235</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
